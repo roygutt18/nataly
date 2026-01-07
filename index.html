@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נטלי סלמנוביץ' | פיזיותרפיה וסטיבולרית ושיקום ספורט</title>
+    <meta name="description"
+        content="פיזיותרפיה מקצועית בחולון. התמחות בפיזיותרפיה וסטיבולרית, שיקום פציעות ספורט וטיפול אישי ומקצועי.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Heebo:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Accessibility Widget -->
+    <div class="accessibility-widget" id="acc-widget">
+        <button class="acc-btn" id="acc-toggle" title="תפריט נגישות">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="acc-menu" id="acc-menu">
+            <div style="margin-bottom: 20px;">
+                <h4 style="margin-bottom: 15px; font-size: 1rem;">נגישות האתר</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span style="font-size: 0.9rem;">ניגודיות גבוהה</span>
+                    <button class="acc-control-btn" id="toggle-contrast"
+                        style="padding: 5px 12px; border-radius: 6px; cursor: pointer;">הפעל</button>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <span style="font-size: 0.9rem;">גודל גופן</span>
+                    <div style="display: flex; gap: 5px;">
+                        <button class="acc-control-btn" id="font-increase"
+                            style="width: 32px; height: 32px; border-radius: 6px; cursor: pointer;">+</button>
+                        <button class="acc-control-btn" id="font-decrease"
+                            style="width: 32px; height: 32px; border-radius: 6px; cursor: pointer;">-</button>
+                    </div>
+                </div>
+            </div>
+            <button class="acc-control-btn" id="reset-acc"
+                style="width: 100%; padding: 10px; border-radius: 8px; cursor: pointer; background: var(--secondary-color); color: white; border: none;">איפוס
+                הגדרות</button>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">נטלי <span>סלמנוביץ'</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">אודות</a></li>
+                <li><a href="#services">שירותים</a></li>
+                <li><a href="#why-me">למה אני?</a></li>
+                <li><a href="#testimonials">המלצות</a></li>
+                <li><a href="#contact" class="btn btn-outline" style="padding: 10px 22px;">קביעת תור</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text animate-on-scroll">
+                    <h1>שיקום מקצועי, לחיים בתנועה</h1>
+                    <p>פיזיותרפיה וסטיבולרית ושיקום פציעות ספורט בגישה מותאמת אישית. המטרה שלי היא להחזיר אתכם לתפקוד
+                        מלא במינימום זמן ובמקסימום ביטחון.</p>
+                    <div class="hero-btns">
+                        <a href="https://wa.me/972548145412" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> קבע/י תור עכשיו
+                        </a>
+                        <a href="#services" class="btn btn-outline">גלו את השירותים</a>
+                    </div>
+                </div>
+                <div class="hero-image-placeholder animate-on-scroll">
+                    <img src="images/physo.jpg" alt="נטלי סלמנוביץ' - פיזיותרפיסטית" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-placeholder animate-on-scroll">
+                        <img src="images/example.jpg" alt="טיפול פיזיותרפי מקצועי" class="about-img">
+                    </div>
+                    <div class="about-text animate-on-scroll">
+                        <h2 class="section-title">מומחיות עם יחס אישי</h2>
+                        <p>נעים מאוד, אני נטלי. הגישה הטיפולית שלי משלבת ידע קליני מעמיק יחד עם אנושיות והקשבה לצרכים
+                            הייחודיים של כל מטופל ומטופלת.</p>
+                        <p>אני מאמינה שכל תהליך שיקום הוא מסע משותף, בו אנחנו בונים יחד את הדרך הבטוחה והנכונה ביותר
+                            עבורכם לחזור לשגרה שוקקת ובריאה.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-certificate"></i> מוסמכת בפיזיותרפיה וסטיבולרית</li>
+                            <li><i class="fas fa-running"></i> ניסיון עשיר בשיקום ספורטאים</li>
+                            <li><i class="fas fa-home"></i> בניית תוכניות תרגול מקיפות לבית</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section-padding bg-secondary" style="background: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title">שירותי הקליניקה</h2>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon"><i class="fas fa-wind"></i></div>
+                        <h3>טיפול וסטיבולרי</h3>
+                        <p>אבחון וטיפול ממוקד בסחרחורות (ורטיגו) ובעיות במערכת שיווי המשקל המרכזית וההיקפית.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon"><i class="fas fa-medal"></i></div>
+                        <h3>פציעות ספורט</h3>
+                        <p>שיקום מקיף מפציעות אורתופדיות, כאבי מפרקים וחזרה הדרגתית ובטוחה לפעילות ספורטיבית.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3>ייעוץ ומניעה</h3>
+                        <p>בניית ארגז כלים למניעת פציעות חוזרות ושיפור היכולות הפיזיות בחיי היומיום ובענפי ספורט שונים.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section-padding">
+            <div class="container">
+                <h2 class="section-title">סיפורי הצלחה</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <div>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"נטלי עזרה לי לחזור לרוץ אחרי חודשים של כאבים. הדיוק באבחנה והתרגילים שנתנה לי לבית עשו
+                                את כל ההבדל. מקצוענית אמיתית!"</p>
+                        </div>
+                        <div class="author-name">Ziv Gabovitch</div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <div>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"הגעתי בגלל סחרחורות קשות שכבר פגעו לי בתפקוד. נטלי הייתה סבלנית, הסבירה כל שלב ותוך מספר
+                                טיפולים חזרתי לשיווי משקל מלא."</p>
+                        </div>
+                        <div class="author-name">שירה מסיקה</div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <div>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"היחס האישי והידע המקצועי של נטלי הם ברמה הגבוהה ביותר. ממליץ בחום לכל מי שמחפש שיקום
+                                רציני ואפקטיבי."</p>
+                        </div>
+                        <div class="author-name">Roy Fox</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="cta">
+            <div class="container animate-on-scroll">
+                <h2>בואו נחזור לתנועה חופשית</h2>
+                <p>תיאום תור ראשוני וייעוץ מקיף מחכה לכם כאן. צרו קשר ישיר בוואטסאפ.</p>
+                <a href="https://wa.me/972548145412" class="btn btn-primary"
+                    style="padding: 20px 45px; font-size: 1.2rem; background: #ffffff; color: var(--primary-color);">
+                    <i class="fab fa-whatsapp" style="color: #25d366;"></i> דברו איתי עכשיו
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-padding bg-secondary" style="padding: 80px 0; background: var(--bg-main);">
+        <div class="container" style="text-align: center;">
+            <div class="logo" style="margin-bottom: 30px; font-size: 2rem;">נטלי <span>סלמנוביץ'</span></div>
+            <div style="display: flex; justify-content: center; gap: 30px; font-size: 1.8rem; margin-bottom: 40px;">
+                <a href="#" style="color: var(--primary-color);"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: var(--primary-color);"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/972548145412" style="color: var(--primary-color);">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <p style="opacity: 0.7;">חולון, ישראל | 054-8145412</p>
+            <hr style="margin: 40px auto; width: 50%; opacity: 0.1; border-color: var(--primary-color);">
+            <p style="font-size: 0.9rem; opacity: 0.6;">&copy; 2026 נטלי סלמנוביץ' - פיזיותרפיה ושיקום. כל הזכויות
+                שמורות.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
