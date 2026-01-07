@@ -192,6 +192,7 @@ h4 {
 .hero-btns {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Hero & About Images */
@@ -427,7 +428,7 @@ h4 {
 /* Accessibility Widget Styles */
 .accessibility-widget {
     position: fixed;
-    top: 50%;
+    bottom: 30%;
     left: 20px;
     transform: translateY(-50%);
     z-index: 2000;
