@@ -471,6 +471,14 @@ h4 {
         gap: 50px;
     }
 
+    .hero-image-placeholder {
+        display: none;
+    }
+
+    .hero img {
+        display: none;
+    }
+
     .hero-text h1 {
         font-size: 3.5rem;
     }
